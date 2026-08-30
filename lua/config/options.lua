@@ -3,6 +3,6 @@
 -- Add any additional options here
 vim.o.shell = "pwsh"
 
-vim.opt.timeoutlen = 100
+vim.opt.timeoutlen = 150
 
 vim.g.lazyvim_prettier_needs_config = false
