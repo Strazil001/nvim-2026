@@ -89,7 +89,7 @@ return {
           for section_name, section in pairs(mode) do
             -- Keep 'a' and 'z' intact so powerline separators render correctly
             if type(section) == "table" and section_name ~= "a" and section_name ~= "z" then
-              section.bg = "NONE"
+              section.bg = "none"
             end
           end
         end

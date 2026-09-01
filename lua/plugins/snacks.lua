@@ -1,6 +1,9 @@
 return {
   "folke/snacks.nvim",
   opts = {
+    scroll = {
+      enabaled = false,
+    },
     picker = {
       layout = {
         layout = {
