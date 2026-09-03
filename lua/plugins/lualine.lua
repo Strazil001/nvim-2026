@@ -57,6 +57,21 @@ return {
         },
       },
     }
+    -- Give the diff added/modified/removed symbols onedark pastel colors
+    do
+      local ok, colors = pcall(function()
+        return require("onedarkpro.helpers").get_colors()
+      end)
+      for _, comp in ipairs(opts.sections.lualine_x or {}) do
+        if type(comp) == "table" and comp[1] == "diff" then
+          comp.diff_color = {
+            added = { fg = ok and colors.green or "#98be65" },
+            modified = { fg = ok and colors.yellow or "#ECBE7B" },
+            removed = { fg = ok and colors.red or "#ec5f67" },
+          }
+        end
+      end
+    end
     -- Restore trouble.nvim symbol breadcrumb (function/class under cursor)
     if vim.g.trouble_lualine and LazyVim.has("trouble.nvim") then
       local trouble = require("trouble")
