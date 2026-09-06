@@ -83,6 +83,9 @@ return {
       PmenuSel = { bg = "overlay", fg = "rose" },
       BlinkCmpMenuSelection = { bg = "overlay", fg = "rose" },
 
+      StatusLine = { bg = "base", fg = "text" },
+      StatusLineNC = { bg = "base", fg = "muted" },
+
       -- Treesitter (markdown parser)
       ["@markup.italic"] = { fg = "gold", italic = true },
       ["@markup.strong"] = { fg = "love", bold = true },

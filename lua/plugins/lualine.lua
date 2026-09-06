@@ -13,6 +13,32 @@ return {
     -- Clear default section separators to remove solid powerline arrows between middle sections
     opts.options.section_separators = { left = "", right = "" }
 
+    opts.options.theme = function()
+      local p = require("rose-pine.palette")
+
+      local function mode(color)
+        return {
+          a = { bg = color, fg = p.base, gui = "bold" },
+          b = { bg = p.surface, fg = p.text },
+          c = { bg = p.base, fg = p.text },
+        }
+      end
+
+      return {
+        normal = mode(p.rose),
+        insert = mode(p.foam),
+        visual = mode(p.iris),
+        replace = mode(p.love),
+        command = mode(p.pine),
+        terminal = mode(p.muted), -- zelfde als normal, dit fixte je blauwe balk
+        inactive = {
+          a = { bg = p.base, fg = p.muted },
+          b = { bg = p.base, fg = p.muted },
+          c = { bg = p.base, fg = p.muted },
+        },
+      }
+    end
+
     opts.sections = opts.sections or {}
 
     -- CUSTOM MODUS INDICATOR MET NERD SYMBOLEN
