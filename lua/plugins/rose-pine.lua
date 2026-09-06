@@ -107,7 +107,7 @@ return {
     before_highlight = function(group, highlight, palette) end,
   },
   config = function(_, opts)
-    require("rose-pine").setup(opts) -- 🌟 ADDED: Ensure options are fully set up before loading
+    require("rose-pine").setup(opts)
     vim.cmd("colorscheme rose-pine")
   end,
 }
