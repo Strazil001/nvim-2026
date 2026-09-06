@@ -4,7 +4,7 @@ return {
     scroll = {
       enabled = true,
       animate = {
-        duration = { step = 2, total = 50 }, -- Default is step=10, total=200
+        duration = { step = 5, total = 100 }, -- Default is step=10, total=200
         easing = "linear",
       },
     },
