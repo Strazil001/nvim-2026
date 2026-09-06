@@ -12,11 +12,5 @@ return {
       style = "underline",
     }
     opts.highlights = opts.highlights or {}
-
-    local blue = "#61afef"
-
-    opts.highlights.indicator_selected = { fg = blue }
-    opts.highlights.indicator_visible = { fg = blue }
-    opts.highlights.buffer_selected = { fg = blue }
   end,
 }
