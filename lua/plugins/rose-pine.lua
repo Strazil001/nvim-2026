@@ -86,6 +86,10 @@ return {
       NoiceFormatProgressDone = { fg = "base", bg = "iris" },
       NoiceFormatProgressTodo = { fg = "iris", bg = "base" },
 
+      Cursor = { fg = "base", bg = "rose" },
+      CursorLineNr = { fg = "rose", bold = true },
+      CursorLine = { bg = "surface", blend = 100 },
+
       StatusLine = { bg = "base", fg = "text" },
       StatusLineNC = { bg = "base", fg = "muted" },
 
@@ -110,7 +114,7 @@ return {
       RenderMarkdownCodeInline = { fg = "foam", bg = "#1f1d2e", italic = true },
     },
 
-    before_highlight = function(group, highlight, palette) end,
+    --before_highlight = function(group, highlight, palette) end,
   },
   config = function(_, opts)
     require("rose-pine").setup(opts)
