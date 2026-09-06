@@ -83,6 +83,9 @@ return {
       PmenuSel = { bg = "overlay", fg = "rose" },
       BlinkCmpMenuSelection = { bg = "overlay", fg = "rose" },
 
+      NoiceFormatProgressDone = { fg = "base", bg = "iris" },
+      NoiceFormatProgressTodo = { fg = "iris", bg = "base" },
+
       StatusLine = { bg = "base", fg = "text" },
       StatusLineNC = { bg = "base", fg = "muted" },
 
