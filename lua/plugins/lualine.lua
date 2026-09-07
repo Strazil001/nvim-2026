@@ -30,7 +30,7 @@ return {
         visual = mode(p.iris),
         replace = mode(p.love),
         command = mode(p.pine),
-        terminal = mode(p.muted), -- zelfde als normal, dit fixte je blauwe balk
+        terminal = mode(p.muted),
         inactive = {
           a = { bg = p.base, fg = p.muted },
           b = { bg = p.base, fg = p.muted },
@@ -60,11 +60,11 @@ return {
             ["R"] = "   󰰞 ",
             ["Rv"] = "   󰰪  󰰞 ",
             ["c"] = "   󰯱 ",
-            ["cv"] = "    ",
-            ["ce"] = "    ",
-            ["r"] = "   Prompt",
-            ["rm"] = "   More",
-            ["r?"] = "   Confirm",
+            ["cv"] = "    ",
+            ["ce"] = "    ",
+            ["r"] = "    ",
+            ["rm"] = "    ",
+            ["r?"] = "    ",
             ["!"] = "    ",
             ["t"] = "    ",
           }
@@ -98,7 +98,7 @@ return {
         symbols = {
           modified = " ", -- somewhat redundant if using modified highlight
           readonly = " ",
-          newfile = "", -- somewhat redundant if using newfile highlight
+          newfile = " ", -- somewhat redundant if using newfile highlight
           ellipsis = "…", -- used between shortened directory parts
         },
         path_sep = "  ",

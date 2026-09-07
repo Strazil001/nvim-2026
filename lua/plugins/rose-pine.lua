@@ -88,7 +88,7 @@ return {
 
       Cursor = { fg = "base", bg = "rose" },
       CursorLineNr = { fg = "rose", bold = true },
-      CursorLine = { bg = "surface", blend = 100 },
+      CursorLine = { bg = "muted", blend = 10 },
 
       StatusLine = { bg = "base", fg = "text" },
       StatusLineNC = { bg = "base", fg = "muted" },
