@@ -5,6 +5,11 @@ return {
       inlay_hints = {
         enabled = false,
       },
+      diagnostics = {
+        float = {
+          border = "rounded",
+        },
+      },
       servers = {
         -- Voorkom dat nvim-lspconfig rust_analyzer start om conflicten te vermijden
         rust_analyzer = { enabled = false },

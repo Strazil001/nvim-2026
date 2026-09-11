@@ -82,6 +82,7 @@ return {
       BlinkCmpDocBorder = { bg = "base", fg = "muted" },
       PmenuSel = { bg = "overlay", fg = "rose" },
       BlinkCmpMenuSelection = { bg = "overlay", fg = "rose" },
+      BlinkCmpDocCursorLine = { bg = "overlay", blend = 15 },
 
       NoiceFormatProgressDone = { fg = "base", bg = "iris" },
       NoiceFormatProgressTodo = { fg = "iris", bg = "base" },
@@ -105,7 +106,6 @@ return {
       ["@field"] = { fg = "foam" }, -- struct field names in literals/patterns
       ["@property"] = { fg = "foam" }, -- some rust queries use this instead of @field
       ["@variable.member"] = { fg = "foam" }, -- newer capture name in some parser versions
-
       ["@markup.raw.markdown_inline"] = { fg = "love", bg = "#191724" },
       -- fallback for older treesitter/legacy syntax:
       ["@text.literal.markdown_inline"] = { fg = "love", bg = "#191724" },
