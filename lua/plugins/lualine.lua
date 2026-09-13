@@ -76,7 +76,7 @@ return {
         right_padding = 2,
       },
     }
-
+    opts.sections.lualine_b = { { "branch", separator = { left = "", right = "" } } }
     opts.sections.lualine_c = {
       LazyVim.lualine.root_dir(),
       {

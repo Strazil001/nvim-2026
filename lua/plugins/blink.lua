@@ -18,7 +18,7 @@ return {
       preset = "none", -- Clear default keymaps to avoid conflicts
 
       ["<CR>"] = { "fallback" }, -- Disable Enter from accepting completions
-      ["<C-y>"] = { "select_and_accept" }, -- Confirm selection
+      ["<Tab>"] = { "select_and_accept" }, -- Confirm selection
 
       ["<C-n>"] = { "select_next", "fallback" }, -- Navigate down
       ["<C-p>"] = { "select_prev", "fallback" }, -- Navigate up

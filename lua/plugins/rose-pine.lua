@@ -84,6 +84,9 @@ return {
       BlinkCmpMenuSelection = { bg = "overlay", fg = "rose" },
       BlinkCmpDocCursorLine = { bg = "overlay", blend = 15 },
 
+      LspInlayHint = { fg = "#4a4660", bg = "base", italic = true },
+      InlayHint = { fg = "#4a4660", bg = "base", italic = true },
+
       NoiceFormatProgressDone = { fg = "base", bg = "iris" },
       NoiceFormatProgressTodo = { fg = "iris", bg = "base" },
 
