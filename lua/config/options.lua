@@ -11,4 +11,6 @@ vim.opt.directory = os.getenv("TEMP") .. "/nvim-swap//"
 
 vim.opt.guicursor = "n-v-c-sm:block-Cursor,i-ci-ve:ver25-Cursor,r-cr-o:hor20-Cursor"
 
+vim.opt.listchars:append({ trail = " " })
+
 vim.g.lazyvim_prettier_needs_config = false
