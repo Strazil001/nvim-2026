@@ -1,6 +1,12 @@
 return {
   "saghen/blink.cmp",
   opts = {
+    snippets = {
+      -- This disables the visual ghost text / checkboxes for jumping
+      expand = function(snippet)
+        vim.snippet.expand(snippet)
+      end,
+    },
     completion = {
       menu = {
         border = "rounded",
