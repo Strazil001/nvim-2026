@@ -40,6 +40,8 @@ return {
     dependencies = {
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
+      "ColinKennedy/mega.cmdparse",
+      "ColinKennedy/mega.logging",
       --- The below dependencies are optional,
       "nvim-mini/mini.pick", -- for file_selector provider mini.pick
       "folke/snacks.nvim", -- for input provider snacks
